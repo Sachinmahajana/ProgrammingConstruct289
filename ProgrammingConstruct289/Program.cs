@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the Programming construct Program");
             Console.WriteLine("Please choose the program given below");
-            Console.WriteLine("\n1:CheckEqual");
+            Console.WriteLine("\n1:CheckEqual\n2:Evenoddnumber");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -14,6 +14,10 @@
                 case 1:
                     Equalnumber myObj = new Equalnumber();
                     myObj.EqualNumberFunction();
+                    break;
+                case 2:
+                    EvenOdd myObj1 = new EvenOdd();
+                    myObj1.EvenOddFunction();
                     break;
             }
         }
